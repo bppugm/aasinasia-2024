@@ -120,7 +120,7 @@ code {
 
 .nav-link.active .badge-ico-process,
 .nav-link.active .badge-ico-done {
-  color: #fdd300 !important;
+  color: #fd8300 !important;
   background-color: transparent;
   font-family: 'Albert Sans', Helvetica  !important;
   font-weight: 800;
@@ -152,7 +152,7 @@ code {
 .nav-item a.active {
   border-bottom: 2px solid #fdd300;
   padding-bottom: 3px;
-  color: #fdd300 !important;
+  color: #fd8300 !important;
 }
 
 /* NAV Pills */
@@ -164,7 +164,7 @@ code {
   text-decoration: none;
   font-size: 11pt;
   letter-spacing: .5px;
-  color: #fdd300;
+  color: #fd8300;
 }
 
 .nav-pills .nav-link:hover{
@@ -173,7 +173,7 @@ code {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fdd300 !important;
+  color: #fd8300 !important;
   background-color: #ffc1071f;
 }
 
@@ -630,6 +630,29 @@ code {
   }
 }
 
+/* List of Sponsors & Exhibitors */
+
+.card-white {
+  padding: 15px;
+  background-color: #fff !important;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+}
+
+.card-white img {
+  border: none;
+  height: 75px;
+  width: auto;
+}
+
+.card-white:hover{
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  color: #fd8300;
+  text-decoration: none !important;
+}
+
 /* LIST OF ARTICLES */
 
 .article-list .card {
@@ -722,11 +745,11 @@ code {
   --bs-btn-color: #00406E;
   --bs-btn-bg: #fdd300;
   --bs-btn-border-color: #fdd300;
-  --bs-btn-hover-color: #00406E;
+  --bs-btn-hover-color: #fd8300;
   --bs-btn-hover-bg: #fff;
   --bs-btn-hover-border-color: #fff;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #fd8300;
   --bs-btn-active-bg: #fff;
   --bs-btn-active-border-color: #fff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -739,11 +762,11 @@ code {
   --bs-btn-color: #fdd300;
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
-  --bs-btn-hover-color: #40bb6a;
+  --bs-btn-hover-color: #fd8300;
   --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
-  --bs-btn-active-color: #40bb6a;
+  --bs-btn-active-color: #fd8300;
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color: transparent;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
