@@ -3,24 +3,6 @@
  * Created by Rafieiy (https://github.com/davieiycode) on 2025
  */
 
-/* MAGNIFYING GLASS by w3schools (https://www.w3schools.com/howto/howto_js_image_magnifier_glass.asp) */
-
-* {box-sizing: border-box;}
-
-.img-magnifier-container {
-  position: relative;
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
-}
-
 /* CUSTOM HEADINGS */
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,11 +117,11 @@ code {
   font-weight: 600;
   text-decoration: none;
   font-size: 10pt;
-  color: #2e2e2e;
+  color: #2e2e2e !important;
 }
 
 .nav-item .nav-link:hover {
-  border-bottom: 2px solid #fdd300;
+  /* border-bottom: 2px solid #fdd300; */
   padding-bottom: 3px;
   color: #fd8300 !important;
 }
@@ -149,7 +131,7 @@ code {
 }
 
 .nav-item a.active {
-  border-bottom: 2px solid #fdd300;
+  /* border-bottom: 2px solid #fdd300; */
   padding-bottom: 3px;
   color: #fd8300 !important;
 }
@@ -163,7 +145,7 @@ code {
   text-decoration: none;
   font-size: 11pt;
   letter-spacing: .5px;
-  color: #fd8300;
+  color: #fd8300 !important;
 }
 
 .nav-pills .nav-link:hover{
@@ -181,281 +163,6 @@ code {
 .footer {
   background-color: #f5f9fd;
   border-top: 1px solid #eaeaf6;
-}
-
-/* COLUMNS IN BLUE AREA */
-
-@media (min-width: 992px) {
-  .intro-left-col {
-    padding-right: 3rem !important;
-  }
-
-  .intro-right-col {
-    padding-left: 3rem !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .intro-right-col {
-    padding-top: 2rem;
-  }
-}
-
-/* FLOATED CARDS WITHIN CONTENT */
-
-@media (max-width: 575px) {
-  .card-float {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-}
-
-/* IMPORTANT DETAILS */
-
-@media (max-width: 462px) {
-  .important-details {
-    margin-top: 10px;
-  }
-}
-
-/* FIX NON-WRAPPING ON LONG ITEMS */
-
-/*@media (max-width: 500px) {
-  .dropdown-item {
-    white-space: normal;
-  }
-}*/
-
-/* LIST OF PRESENTERS */
-
-/* Container to scale list on small devices and keep regular container padding on large devices */
-
-@media (min-width: 992px) {
-  .presenters-list-container {
-    width: 960px;
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .presenters-list-container {
-    width: 1140px;
-    max-width: 100%;
-  }
-}
-
-/* Presenters list headings */
-
-.presenters-list-heading {
-  padding: 15px 0;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.presenters-list-heading > .col-sm-12 {
-  letter-spacing: 2px;
-  text-align: center;
-  color: #fff;
-}
-
-.presenters-list-heading > .col-sm-12 > h4 {
-  margin-bottom: 0;
-}
-
-.presenters-list-col-title > h5 {
-  margin-bottom: 0;
-}
-
-/* Presenters list items */
-
-.presenters-list-item {
-  padding: 5px 0;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.presenters-list-item > .col-sm-2,
-.schedule-item > .col-sm-8 {
-  padding: 0;
-}
-
-.presenters-list-item > .col-sm-8 > .row {
-  margin-right: -20px;
-}
-
-@media (min-width: 992px) {
-  .presenters-list-item {
-    padding-left: 2%;
-  }
-}
-
-@media (max-width: 991px) {
-  .presenters-list-item {
-    border-bottom: 1px solid #e3e3f3;
-  }
-}
-
-@media (max-width: 767px) {
-  .presenters-list-item {
-    font-size: 0.95rem;
-  }
-
-  .presenters-list-heading > .col-sm-12 > h4 {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .presenters-list-item {
-    font-size: 0.9rem;
-  }
-}
-
-/* CONFERENCE PROGRAM */
-
-/* Titles in program nav tabs */
-
-.program-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-@media (max-width: 500px) {
-  .program-title {
-    font-size: 4.5vw !important;
-  }
-}
-
-/* Schedule headings */
-
-.schedule-heading {
-  padding: 25px 0;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.schedule-heading > .col-sm-12 {
-  letter-spacing: 2px;
-  text-align: center;
-  color: #fff;
-}
-
-/* Schedule items */
-
-.schedule-item {
-  padding: 25px 0;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-bottom: 1px solid #e3e3f3;
-}
-
-.schedule-item > .col-sm-2,
-.schedule-item > .col-sm-8 {
-  padding: 0;
-}
-
-.schedule-item > .col-sm-8 > .row {
-  margin-right: -20px;
-}
-
-@media (min-width: 992px) {
-  .schedule-item {
-    padding-left: 2%;
-  }
-}
-
-/* Multiple schedule items in single time slot */
-
-.schedule-multiple-item {
-  padding: 25px 0;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.schedule-multiple-item > .col-sm-2,
-.schedule-item > .col-sm-8 {
-  padding: 0;
-}
-
-.schedule-multiple-item > .col-sm-8 {
-  padding-left: 0;
-}
-
-.schedule-multiple-item > .col-sm-8 > .row {
-  margin-right: -20px;
-}
-
-@media (max-width: 575px) {
-  .schedule-multiple-item {
-    border-bottom: 1px solid #e3e3f3;
-  }
-}
-
-@media (min-width: 756px) {
-  .schedule-multiple-item {
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .schedule-multiple-item {
-    padding-left: 2%;
-  }
-}
-
-/* Separator for multiple items */
-
-@media (min-width: 756px) {
-  .schedule-item-separator {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e3e3f3;
-  }
-}
-
-/* Event time */
-
-@media (min-width: 576px) {
-  .schedule-time {
-    margin-bottom: 0;
-  }
-}
-
-/* Event location */
-
-.schedule-location {
-  padding-left: 20px !important;
-}
-
-@media (max-width: 575px) {
-  .schedule-location {
-    padding-left: 0 !important;
-  }
-}
-
-/* Speaker images */
-
-.program-speaker-img {
-  width: 100%;
-  margin: auto;
-  border-radius: 50%;
-  padding: 1%;
-}
-
-@media (max-width: 575px) {
-  .program-speaker-img {
-    width: 135px;
-    padding-bottom: 10px !important;
-  }
-
-  .program-speaker {
-    padding-left: 2% !important;
-  }
-}
-
-@media (max-width: 1199px) {
-  .program-speaker {
-    padding: 0;
-  }
 }
 
 /* REGISTER BUTTON IN NAVBAR */
@@ -498,135 +205,6 @@ code {
   width: 0px !important; /* remove scrollbar space */
   background: transparent; /* optional: just make scrollbar invisible */
   -ms-overflow-style: none;
-}
-
-/* TUTORIAL IMAGE */
-
-.img-tutorial {
-  width: 75%;
-  border: 1px solid #eaeaf6;
-}
-
-@media (max-width: 991px) {
-  .img-tutorial {
-    width: 100% !important;
-  }
-}
-
-/* THE ICoSIA 2020 IN IMAGES AND WORDS */
-
-/* TEXT */
-
-.images-and-words {
-  font-weight: 300;
-  text-align: center;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-  padding: 1.25em;
-}
-
-@media (min-width: 1200px) {
-  .images-and-words {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 1199px) {
-  .images-and-words {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .images-and-words {
-    font-size: 0.96rem;
-  }
-}
-
-@media (max-width: 766px) {
-  .images-and-words {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .images-and-words {
-    font-size: 1rem;
-  }
-}
-
-/* CREATE SPACE BETWEEN MODAL TITLE AND BUTTONS */
-
-@media (min-width: 992px) {
-  .modal-title {
-    padding-right: 10px;
-  }
-}
-
-/* FLICKR BUTTON */
-
-.btn-flickr {
-  color: #fff;
-  background-color: #ff1981;
-  border-color: #ff1981;
-}
-
-.btn-flickr:hover {
-  color: #fff;
-  background-color: #e61674;
-  border-color: #d9156e;
-}
-
-.btn-flickr:focus,
-.btn-flickr.focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-}
-
-.btn-flickr.disabled,
-.btn-flickr:disabled {
-  background-color: #ff1981;
-  border-color: #d9156e;
-}
-
-.btn-flickr:active,
-.btn-flickr.active,
-.show > .btn-flickr.dropdown-toggle {
-  color: #fff;
-  background-color: #e61674;
-  background-image: none;
-  border-color: #d9156e;
-}
-
-/* REGISTRATION CLOSED TEXT */
-
-.registration-closed-big-text {
-  font-size: 3.3rem;
-  font-weight: 500;
-}
-
-.registration-closed-medium-text {
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
-.registration-closed-logo {
-  width: 50%;
-}
-
-@media (max-width: 767px) {
-  .registration-closed-big-text {
-    font-size: 2rem;
-  }
-
-  .registration-closed-medium-text {
-    font-size: 1.15rem;
-    text-align: left !important;
-  }
-
-  .registration-closed-logo {
-    width: 80%;
-  }
 }
 
 /* List of Sponsors & Exhibitors */
@@ -695,58 +273,6 @@ code {
   color: #fd8300 !important;
   text-decoration: none !important;
   cursor: pointer;
-}
-
-/* LIST OF ARTICLES */
-
-.article-list .card {
-  margin-bottom: 0.5rem;
-}
-
-.article-list .card .row {
-  padding: 1rem;
-}
-
-.article-list .card-block {
-  padding: 1rem;
-}
-
-.article-list .card-text {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .article-list .col-lg-10 {
-    padding-bottom: 0.7rem;
-  }
-}
-
-.article-list .modal-title {
-  font-weight: 500 !important;
-}
-
-.article-list .authors {
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.article-list .affiliation {
-  color: #636c72 !important;
-  line-height: 1;
-  margin-bottom: 0;
-  font-size: 90%;
-}
-
-@media (max-width: 767px) {
-  .article-list .affiliation {
-    margin-bottom: 0.25rem;
-  }
-}
-
-.article-list .card-title {
-  font-weight: 500 !important;
-  margin-bottom: 0.5rem;
 }
 
 /* MODAL */
